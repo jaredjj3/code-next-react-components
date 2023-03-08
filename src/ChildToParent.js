@@ -4,7 +4,7 @@ export const ChildToParent = () => {
   return (
     <>
       <h2>ChildToParent</h2>
-    
+
       <TodoList />
     </>
   );
@@ -38,6 +38,8 @@ const TodoListItem = (props) => {
   const todo = props.todo;
 
   return (
-    <li><button>done</button>{' '}{todo.text}</li>
+    <li>
+      <button class="btn btn-primary btn-sm">done</button> {todo.text}
+    </li>
   );
 };

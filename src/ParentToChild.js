@@ -12,7 +12,7 @@ export const ParentToChild = () => {
       <h2>ParentToChild</h2>
 
       <div>
-        <input id="msg" />
+        <input id="msg" class="form-control" />
       </div>
 
       <div>msg: {msg}</div>

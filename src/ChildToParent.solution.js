@@ -4,7 +4,7 @@ export const ChildToParent = () => {
   return (
     <>
       <h2>ChildToParent</h2>
-    
+
       <TodoList />
     </>
   );
@@ -25,8 +25,8 @@ const TodoList = () => {
   const [todos, setTodos] = useState(INITIAL_TODOS);
 
   const onTodoListItemClick = (todo) => {
-    setTodos((todos) => todos.filter(({ id }) => todo.id !== id ));
-  }
+    setTodos((todos) => todos.filter(({ id }) => todo.id !== id));
+  };
 
   return (
     <ul>
@@ -48,6 +48,11 @@ const TodoListItem = (props) => {
   };
 
   return (
-    <li><button onClick={onClick}>done</button>{' '}{todo.text}</li>
+    <li>
+      <button class="btn btn-primary btn-sm" onClick={onClick}>
+        done
+      </button>{' '}
+      {todo.text}
+    </li>
   );
 };

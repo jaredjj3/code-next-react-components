@@ -28,9 +28,9 @@ export const SiblingToSibling = () => {
 
 const Foo = (props) => {
   const message = props.message;
-  
+
   const [text, setText] = useState('');
-  
+
   const onChange = (e) => {
     setText(e.target.value);
   };
@@ -45,10 +45,14 @@ const Foo = (props) => {
   return (
     <>
       <h3>Foo</h3>
-      <div>last message from '{message.from}': {message.text}</div>
       <div>
-        <input onChange={onChange} value={text} />
-        <button onClick={onClick}>submit</button>
+        last message from '{message.from}': {message.text}
+      </div>
+      <div class="input-group">
+        <input class="form-control" onChange={onChange} value={text} />
+        <button class="btn btn-primary" onClick={onClick}>
+          submit
+        </button>
       </div>
     </>
   );
@@ -59,11 +63,10 @@ const Bar = (props) => {
   const message = props.message;
 
   const [text, setText] = useState('');
-  
+
   const onChange = (e) => {
     setText(e.target.value);
   };
-
 
   const onClick = () => {
     if (props.onMessage) {
@@ -74,10 +77,12 @@ const Bar = (props) => {
   return (
     <>
       <h3>Bar</h3>
-      <div>last message from '{message.from}': {message.text}</div>
       <div>
-        <input onChange={onChange} value={text} />
-        <button onClick={onClick}>submit</button>
+        last message from '{message.from}': {message.text}
+      </div>
+      <div class="input-group">
+        <input class="form-control" onChange={onChange} value={text} />
+        <button class="btn btn-primary" onClick={onClick}>submit</button>
       </div>
     </>
   );
@@ -91,7 +96,7 @@ const Messenger = (props) => {
   const onMessage = props.onMessage;
 
   const [text, setText] = useState('');
-  
+
   const onChange = (e) => {
     setText(e.target.value);
   };
@@ -105,10 +110,12 @@ const Messenger = (props) => {
   return (
     <>
       <h3>{capitalize(name)}</h3>
-      <div>last message from '{message.from}': {message.text}</div>
       <div>
-        <input onChange={onChange} value={text} />
-        <button onClick={onClick}>submit</button>
+        last message from '{message.from}': {message.text}
+      </div>
+      <div class="input-group">
+        <input class="form-control" onChange={onChange} value={text} />
+        <button class="btn btn-primary" onClick={onClick}>submit</button>
       </div>
     </>
   );
