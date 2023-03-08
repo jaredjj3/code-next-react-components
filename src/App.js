@@ -1,5 +1,6 @@
 import React from 'react';
 import { ParentToChild } from './ParentToChild';
+import { ChildToParent } from './ChildToParent';
 import './style.css';
 
 export default function App() {
@@ -10,6 +11,8 @@ export default function App() {
       <hr />
 
       <ParentToChild />
+
+      <ChildToParent />
     </div>
   );
 }
