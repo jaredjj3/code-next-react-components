@@ -1,6 +1,7 @@
 import React from 'react';
 import { ParentToChild } from './ParentToChild';
 import { ChildToParent } from './ChildToParent';
+import { SiblingToSibling } from './SiblingToSibling';
 import './style.css';
 
 export default function App() {
@@ -13,6 +14,8 @@ export default function App() {
       <ParentToChild />
 
       <ChildToParent />
+
+      <SiblingToSibling />
     </div>
   );
 }
