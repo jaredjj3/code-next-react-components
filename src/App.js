@@ -5,7 +5,7 @@ import { SiblingToSibling } from './SiblingToSibling';
 
 export default function App() {
   return (
-    <div class="container">
+    <div className="container">
       <h1>code-next-react-components</h1>
 
       <hr />

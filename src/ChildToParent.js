@@ -25,9 +25,9 @@ const TodoList = () => {
   const [todos, setTodos] = useState(INITIAL_TODOS);
 
   return (
-    <ul class="list-group">
+    <ul className="list-group">
       {todos.map((todo) => (
-        <li class="list-group-item">
+        <li className="list-group-item">
           <TodoListItem key={todo.id} todo={todo} />
         </li>
       ))}
@@ -40,8 +40,8 @@ const TodoListItem = (props) => {
   const todo = props.todo;
 
   return (
-    <div class="d-flex justify-content-between">
-      {todo.text} <button class="btn btn-primary btn-sm">done</button> 
+    <div className="d-flex justify-content-between">
+      {todo.text} <button className="btn btn-primary btn-sm">done</button> 
     </div>
   );
 };

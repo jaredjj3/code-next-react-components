@@ -29,9 +29,9 @@ const TodoList = () => {
   };
 
   return (
-    <ul class="list-group">
+    <ul className="list-group">
       {todos.map((todo) => (
-        <li class="list-group-item">
+        <li className="list-group-item">
           <TodoListItem key={todo.id} todo={todo} onClick={onTodoListItemClick} />
         </li>
       ))}
@@ -50,8 +50,8 @@ const TodoListItem = (props) => {
   };
 
   return (
-    <div class="d-flex justify-content-between">
-      <button class="btn btn-primary btn-sm" onClick={onClick}>
+    <div className="d-flex justify-content-between">
+      <button className="btn btn-primary btn-sm" onClick={onClick}>
         done
       </button>{' '}
       {todo.text}

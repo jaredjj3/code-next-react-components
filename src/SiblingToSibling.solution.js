@@ -48,9 +48,9 @@ const Foo = (props) => {
       <div>
         last message from '{message.from}': {message.text}
       </div>
-      <div class="input-group">
-        <input class="form-control" onChange={onChange} value={text} />
-        <button class="btn btn-primary" onClick={onClick}>
+      <div className="input-group">
+        <input className="form-control" onChange={onChange} value={text} />
+        <button className="btn btn-primary" onClick={onClick}>
           submit
         </button>
       </div>
@@ -80,9 +80,11 @@ const Bar = (props) => {
       <div>
         last message from '{message.from}': {message.text}
       </div>
-      <div class="input-group">
-        <input class="form-control" onChange={onChange} value={text} />
-        <button class="btn btn-primary" onClick={onClick}>submit</button>
+      <div className="input-group">
+        <input className="form-control" onChange={onChange} value={text} />
+        <button className="btn btn-primary" onClick={onClick}>
+          submit
+        </button>
       </div>
     </>
   );
@@ -113,9 +115,11 @@ const Messenger = (props) => {
       <div>
         last message from '{message.from}': {message.text}
       </div>
-      <div class="input-group">
-        <input class="form-control" onChange={onChange} value={text} />
-        <button class="btn btn-primary" onClick={onClick}>submit</button>
+      <div className="input-group">
+        <input className="form-control" onChange={onChange} value={text} />
+        <button className="btn btn-primary" onClick={onClick}>
+          submit
+        </button>
       </div>
     </>
   );
