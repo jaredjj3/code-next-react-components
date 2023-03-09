@@ -29,9 +29,11 @@ const TodoList = () => {
   };
 
   return (
-    <ul>
+    <ul class="list-group">
       {todos.map((todo) => (
-        <TodoListItem key={todo.id} todo={todo} onClick={onTodoListItemClick} />
+        <li class="list-group-item">
+          <TodoListItem key={todo.id} todo={todo} onClick={onTodoListItemClick} />
+        </li>
       ))}
     </ul>
   );
@@ -48,11 +50,11 @@ const TodoListItem = (props) => {
   };
 
   return (
-    <li>
+    <div class="d-flex justify-content-between">
       <button class="btn btn-primary btn-sm" onClick={onClick}>
         done
       </button>{' '}
       {todo.text}
-    </li>
+    </div>
   );
 };
